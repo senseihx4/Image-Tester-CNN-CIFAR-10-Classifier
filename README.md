@@ -1,6 +1,6 @@
 # Image Tester CNN — CIFAR-10 Classifier
 
-A PyTorch image classification model that fine-tunes a pretrained **ResNet50** on the CIFAR-10 dataset to detect and classify images into 10 categories.
+A PyTorch image classification model that fine-tunes pretrained ResNet models on the CIFAR-10 dataset to detect and classify images into 10 categories.
 
 ## Classes
 `airplane` · `automobile` · `bird` · `cat` · `deer` · `dog` · `frog` · `horse` · `ship` · `truck`
@@ -27,13 +27,26 @@ Image-tester-cnn-project/
 | Epochs | 5 |
 | Test Accuracy | **~80%** |
 
-### Model 2 — ResNet50 🔄 Training in progress
+### Model 2 — ResNet50 ✅
 | Setting | Value |
 |---|---|
 | Base model | ResNet50 (pretrained on ImageNet) |
 | Output layer | Linear(2048 → 10) |
 | Epochs | 15 |
-| Test Accuracy | TBD (currently training) |
+| Test Accuracy | **~83%** |
+| Loss | 0.0953 |
+
+## Example Output
+
+Input image fed to the model, and the predicted label printed below:
+
+```
+Model predicted: cat
+```
+
+<img width="667" height="696" alt="image" src="https://github.com/user-attachments/assets/c373a1e5-2099-40b9-9101-9ae6d1a424a8" />
+
+
 
 ## Setup
 
